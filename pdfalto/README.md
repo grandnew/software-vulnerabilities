@@ -133,7 +133,7 @@ I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.c
 
 # Heap buffer overflow in function TextPage::dump
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/fouzhe/security/blob/master/pdfalto/heap-buffer-overflow_dump) can cause heap buffer overflow in function TextPage::dump when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/heap-buffer-overflow_dump) can cause heap buffer overflow in function TextPage::dump when executing this command:
 
 ```shell
 ./pdfalto heap-buffer-overflow_dump 1.xml
@@ -202,7 +202,9 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 
 
 
-#Memory Leaks
+
+
+# Memory Leaks
 
 I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/detected_memory_leaks) can cause memory leaks when executing this command:
 
