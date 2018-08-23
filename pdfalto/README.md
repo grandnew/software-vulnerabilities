@@ -1,6 +1,6 @@
 # SEGV in function TextPage::restoreState
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/fouzhe/security/pdfalto/SEGV_restoreState) can cause SEGV in function TextPage::restoreState when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/pdfalto/SEGV_restoreState) can cause SEGV in function TextPage::restoreState when executing this command:
 
 ```shell
 ./pdfalto SEGV_restoreState 1.xml
@@ -37,7 +37,7 @@ SUMMARY: AddressSanitizer: SEGV /home/fouzhe/my_fuzz/pdfalto/src/XmlAltoOutputDe
 
 # FPE in function ImageStream::ImageStream
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/fouzhe/security/pdfalto/FPE_ImageStream) can cause FPE in function ImageStream::ImageStream when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/pdfalto/FPE_ImageStream) can cause FPE in function ImageStream::ImageStream when executing this command:
 
 ```shell
 ./pdfalto FPE_ImageStream 1.xml
@@ -76,7 +76,7 @@ SUMMARY: AddressSanitizer: FPE /home/fouzhe/my_fuzz/pdfalto/xpdf-4.00/xpdf/Strea
 
 # SEGV in function GfxImageColorMap::getRGB
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/fouzhe/security/pdfalto/SEGV_getRGB) can cause SEGV in function GfxImageColorMap::getRGB when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/pdfalto/SEGV_getRGB) can cause SEGV in function GfxImageColorMap::getRGB when executing this command:
 
 ```shell
 ./pdfalto SEGV_getRGB 1.xml
@@ -119,7 +119,7 @@ SUMMARY: AddressSanitizer: SEGV /home/fouzhe/my_fuzz/pdfalto/xpdf-4.00/xpdf/GfxS
 
 # Infinite loop
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/fouzhe/security/pdfalto/infinite_loop) can infinite loop when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/pdfalto/infinite_loop) can infinite loop when executing this command:
 
 ```shell
 ./pdfalto infinite_loop 1.xml
@@ -202,7 +202,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 
 #Memory Leaks
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/fouzhe/security/pdfalto/detected_memory_leaks) can cause memory leaks when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/pdfalto/detected_memory_leaks) can cause memory leaks when executing this command:
 
 ```shell
 ./pdfalto detected_memory_leaks 1.xml

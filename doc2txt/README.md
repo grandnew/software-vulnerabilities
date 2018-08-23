@@ -1,6 +1,6 @@
 # Heap Buffer Overflow in Function Storage::init
 
-I used **g++ 5.4 and AddressSanitizer**  to build **[doc2txt](https://github.com/tsfn/doc2txt)**, this [file](https://github.com/fouzhe/security/blob/master/doc2txt/heap-buffer-overflow_init.doc) can cause heap buffer overflow in function Storage::init in Storage.cpp when executing this command(pic is just a folder which is used to store the picture in doc file):
+I used **g++ 5.4 and AddressSanitizer**  to build **[doc2txt](https://github.com/tsfn/doc2txt)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/doc2txt/heap-buffer-overflow_init.doc) can cause heap buffer overflow in function Storage::init in Storage.cpp when executing this command(pic is just a folder which is used to store the picture in doc file):
 
 ```shell
 ./doc2txt ./heap-buffer-overflow_init.doc 1.txt ./pic/
@@ -65,7 +65,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 
 # Heap Buffer Overflow in Function read_stream
 
-I used **g++ 5.4 and AddressSanitizer**  to build **[doc2txt](https://github.com/tsfn/doc2txt)**, this [file](https://github.com/fouzhe/security/blob/master/doc2txt/heap-buffer-overflow_read_stream.doc) can cause heap buffer overflow in function read_stream in Storage.cpp when executing this command(pic is just a folder which is used to store the picture in doc file):
+I used **g++ 5.4 and AddressSanitizer**  to build **[doc2txt](https://github.com/tsfn/doc2txt)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/doc2txt/heap-buffer-overflow_read_stream.doc) can cause heap buffer overflow in function read_stream in Storage.cpp when executing this command(pic is just a folder which is used to store the picture in doc file):
 
 ```shell
 ./doc2txt heap-buffer-overflow_read_stream.doc 1.txt ./pic/

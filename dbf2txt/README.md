@@ -52,7 +52,7 @@ index ed7b4e1..4cda65b 100644
 
 
 
-This [file](https://github.com/fouzhe/security/blob/master/dbf2txt/infinite_loop.dbf) can cause infinite loop when executing this command:
+This [file](https://github.com/grandnew/software-vulnerabilities/blob/master/dbf2txt/infinite_loop.dbf) can cause infinite loop when executing this command:
 
 ```shell
 ./dbf2txt infinite_loop.dbf 1.txt
