@@ -1,4 +1,4 @@
-# Infinite Loop
+# Infinite Loop(CVE-2018-17042)
 
 I used **Clang 6.0 and AddressSanitizer**  to build **[dbf2txt](https://github.com/bcsanches/dbf2txt/commit/76e8f4f22ac7f8a99dea6d443c401c223e661472)**, in order to build it with `clang` in `ubuntu 16.04` , the `DbfFile.cpp` and `DbfFile.h` should be motified like following:
 

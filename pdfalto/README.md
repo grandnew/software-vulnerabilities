@@ -1,6 +1,6 @@
 # SEGV in function TextPage::restoreState
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/SEGV_restoreState) can cause SEGV in function TextPage::restoreState when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/SEGV_restoreState) can cause SEGV in function TextPage::restoreState in XmlAltoOutputDev.cc when executing this command:
 
 ```shell
 ./pdfalto SEGV_restoreState 1.xml
@@ -39,7 +39,7 @@ SUMMARY: AddressSanitizer: SEGV /home/fouzhe/my_fuzz/pdfalto/src/XmlAltoOutputDe
 
 # FPE in function ImageStream::ImageStream
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/FPE_ImageStream) can cause FPE in function ImageStream::ImageStream when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/FPE_ImageStream) can cause FPE in function ImageStream::ImageStream in Stream.cc when executing this command:
 
 ```shell
 ./pdfalto FPE_ImageStream 1.xml
@@ -78,7 +78,7 @@ SUMMARY: AddressSanitizer: FPE /home/fouzhe/my_fuzz/pdfalto/xpdf-4.00/xpdf/Strea
 
 # SEGV in function GfxImageColorMap::getRGB
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/SEGV_getRGB) can cause SEGV in function GfxImageColorMap::getRGB when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/SEGV_getRGB) can cause SEGV in function GfxImageColorMap::getRGB in GfxState.cc when executing this command:
 
 ```shell
 ./pdfalto SEGV_getRGB 1.xml
@@ -133,7 +133,7 @@ I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.c
 
 # Heap buffer overflow in function TextPage::dump
 
-I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/heap-buffer-overflow_dump) can cause heap buffer overflow in function TextPage::dump when executing this command:
+I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/heap-buffer-overflow_dump) can cause heap buffer overflow in function TextPage::dump in XmlAltoOutputDev.cc when executing this command:
 
 ```shell
 ./pdfalto heap-buffer-overflow_dump 1.xml
