@@ -131,7 +131,7 @@ I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.c
 
 
 
-# Heap buffer overflow in function TextPage::dump
+# Heap buffer overflow in function TextPage::dump(CVE-2018-17338)
 
 I used **Clang 6.0 and AddressSanitizer**  to build **[pdfalto](https://github.com/kermitt2/pdfalto)**, this [file](https://github.com/grandnew/software-vulnerabilities/blob/master/pdfalto/heap-buffer-overflow_dump) can cause heap buffer overflow in function TextPage::dump in XmlAltoOutputDev.cc when executing this command:
 
